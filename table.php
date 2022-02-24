@@ -1151,7 +1151,7 @@
     $("div[id^='myModal']").each(function(){
   
   var currentModal = $(this);
-  var isValid = true;
+  
   
   //click next
   currentModal.find('.btn-next').click(function(){
@@ -1171,6 +1171,23 @@
                 alert('Mohon isikan field '+name);
             }
         }
+
+        var msf_fs_i_count = msf_fs.querySelectorAll("input").length;
+        for (i = 0; i < msf_fs_i_count; ++i) {
+            var msf_input_s = msf_fs.querySelectorAll("input")[i];
+            if (msf_input_s.getAttribute("type") === "button") {
+                // nothing happens
+            } else {
+                if (msf_input_s.value === "") {
+                    // msf_input_s.style.backgroundColor = "pink";
+                    msf_val = true;
+                } else {
+                    if (msf_val === false) {} else {
+                        msf_val = true;
+                        msf_input_s.style.backgroundColor = "white";
+                    }
+                }
+            };
     });
 
     if(isValid==true){
