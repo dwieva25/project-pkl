@@ -307,8 +307,10 @@
               
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                     <div>
+                <div>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">+ Data Kebutuhan</button>
+                <a href="edit.php" class="btn btn-success fas fa-edit" > Edit Data Kebutuhan</a>
+               
             </div>
             <br>
                     <!-- DataTales Example -->
@@ -786,38 +788,38 @@
                      </div>
                      <div class="form-group">
                         <h7>Tanggal Perubahan</h7>
-                        <input name="tgl_perubahan" required="required" class="form-last-name form-control input-error" id="form-last-name" type="date">
+                        <input name="tgl_perubahan" required class="form-last-name form-control input-error" id="form-last-name" type="date">
                      </div>
                      <div class="form-group">
                         <h7>Nama K/L/D</h7>
-                        <textarea name="Nama_KLD" class="form-about-yourself form-control input-error" id="form-about-yourself"></textarea>
+                        <textarea name="Nama_KLD" required class="form-about-yourself form-control input-error" id="form-about-yourself"></textarea>
                      </div>
                       <div class="form-group">
                         <h7>Satuan kerja</h7>
-                        <textarea name="satuan_kerja"  class="form-about-yourself form-control input-error" id="form-about-yourself"></textarea>
+                        <textarea name="satuan_kerja" required="required" class="form-about-yourself form-control input-error" id="form-about-yourself"></textarea>
                      </div>
                      <div class="form-group">
                         <h7>Pejabat Pembuat Komitmen (nama jabatan, bukan orang)</h7>
-                        <textarea name="pejabat"  class="form-about-yourself form-control input-error" id="form-about-yourself"></textarea>
+                        <textarea name="pejabat" required="required" class="form-about-yourself form-control input-error" id="form-about-yourself"></textarea>
                      </div>
                      <div class="form-group">
                         <h7>Program (sesuai DIPA)</h7>
-                        <textarea name="program" class="form-about-yourself form-control input-error" id="form-about-yourself"></textarea>
+                        <textarea name="program" required="required" class="form-about-yourself form-control input-error" id="form-about-yourself"></textarea>
                      </div>
                         <div class="form-group">
                         <h7>Kegiatan (sesuai DIPA)</h7>
-                        <textarea name="kegiatan"  class="form-about-yourself form-control input-error" id="form-about-yourself"></textarea>
+                        <textarea name="kegiatan" required="required"  class="form-about-yourself form-control input-error" id="form-about-yourself"></textarea>
                      </div>
                        <div class="form-group">
                         <h7>Output (sesuai DIPA)</h7>
-                        <textarea name="output" class="form-about-yourself form-control input-error" id="form-about-yourself"></textarea>
+                        <textarea name="output" required="required" class="form-about-yourself form-control input-error" id="form-about-yourself"></textarea>
                      </div>
                   </div>
                </fieldset>  
          </div>
          <div class="modal-footer">
             <button type="button" class="btn btn-default btn-prev">Prev</button>
-            <button type="button" class="btn btn-default btn-next" name="">Next</button>
+            <button type="button" class="btn btn-default btn-next" name="next">Next</button>
 
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
          </div>
@@ -848,11 +850,11 @@
                     
                      <div class="form-group">
                         <h7>Kode BMN/ Persediaan</h7>
-                        <input name="kode_BMN" class="form-google-plus form-control" id="form-google-plus" type="text">
+                        <input name="kode_BMN" required="required" class="form-google-plus form-control" id="form-google-plus" type="text">
                      </div>
                      <div class="form-group">
                         <h7>Nama BMN/ Persediaan</h7>
-                        <input name="Nama_BMN" class="form-google-plus form-control" id="form-google-plus" type="text">
+                        <input name="Nama_BMN" required="required" class="form-google-plus form-control" id="form-google-plus" type="text">
                      </div>
                   </div>
                </fieldset>
@@ -889,12 +891,12 @@
                   <div class="form-bottom">
                      <div class="form-group">
                         <h8>Nama Pekerjaan (sesuai POK DIPA)</h8>
-                        <label class="sr-only" for="form-facebook">Nama Pekerjaan (sesuai POK DIPA)</label>
-                        <input name="Nama_pekerjaan" class="form-facebook form-control" id="form-facebook" type="text">
+                        <label  class="sr-only" for="form-facebook">Nama Pekerjaan (sesuai POK DIPA)</label>
+                        <input name="Nama_pekerjaan" required="required" class="form-facebook form-control" id="form-facebook" type="text">
                      </div>
                      <div class="form-group">
                         <h7>Jelaskan kriteria INDIKATOR KINERJA/SPESIFIKASI KINERJA yang dibutuhkan untuk pekerjaan ini</h7>
-                         <select class="form-control" name="kriteria_indikator" id="deskripsi">
+                         <select required="required" class="form-control" name="kriteria_indikator" id="deskripsi">
                                 <option value="Laporan data /output alat yang dipelihara ">1.Laporan data /output alat yang dipelihara</option>
                                 <option value="Service level agreement">2.Service level agreement</option>
                                 <option value="Laporan monitoring visual">3.Laporan monitoring visual</option>
@@ -902,31 +904,31 @@
                         </div>
                      <div class="form-group">
                          <h7>Target/Sasaran Yang Diharapkan</h7>
-                        <input name="target_sasaran" class="form-google-plus form-control" id="form-google-plus" type="text">
+                        <input name="target_sasaran" required="required" class="form-google-plus form-control" id="form-google-plus" type="text">
                      </div>
                       <div class="form-group">
                          <h7>Manfaat</h7>
-                        <input name="manfaat" class="form-google-plus form-control" id="form-google-plus" type="text">
+                        <input name="manfaat" required="required" class="form-google-plus form-control" id="form-google-plus" type="text">
                      </div>
                       <div class="form-group">
                         <h7>Kuantitas</h7>
-                        <input name="kuantitas" class="form-google-plus form-control" id="form-google-plus" type="text">
+                        <input name="kuantitas" required="required" class="form-google-plus form-control" id="form-google-plus" type="text">
                      </div>
                       <div class="form-group">
                         <h7>Ruang lingkup pekerjaan</h7>
-                        <input name="ruang_lingkup" class="form-google-plus form-control" id="form-google-plus" type="text">
+                        <input name="ruang_lingkup" required="required" class="form-google-plus form-control" id="form-google-plus" type="text">
                      </div>
                       <div class="form-group">
                          <h7>Waktu penggunaan</h7>
-                        <input name="waktu_penggunaan" class="form-google-plus form-control" id="form-google-plus" type="text">
+                        <input name="waktu_penggunaan" required="required" class="form-google-plus form-control" id="form-google-plus" type="text">
                      </div>
                       <div class="form-group">
                          <h7>Perkiraan biaya</h7>
-                        <input name="perkiraan_biaya" class="form-google-plus form-control" id="form-google-plus" type="text">
+                        <input name="perkiraan_biaya" required="required" class="form-google-plus form-control" id="form-google-plus" type="text">
                      </div>
                       <div class="form-group">
                          <h7>Atas perkiraan biaya di atas, jelaskan rincian perhitungannya</h7>
-                        <input name="rincian_perhitungan" class="form-google-plus form-control" id="form-google-plus" type="text">
+                        <input name="rincian_perhitungan" required="required" class="form-google-plus form-control" id="form-google-plus" type="text">
                      </div>
                   </div>
                </fieldset>
@@ -964,12 +966,12 @@
                      <div class="form-group">
                         <h8>Jumlah pegawai dalam unit kerja. (dalam tim pengelolaan manajemen PPK)</h8>
                         <label class="sr-only" for="form-facebook">Nama Pekerjaan (sesuai POK DIPA)</label>
-                        <input name="jml_unitkerja" class="form-facebook form-control" id="form-facebook" type="text">
+                        <input name="jml_unitkerja" required="required" class="form-facebook form-control" id="form-facebook" type="text">
                      </div>
     
                      <div class="form-group">
                          <h7>Tingkat beban tugas dan tanggung jawab pegawai dalam melaksanakan tugas dan fungsi Tim Pengelolaan Manajemen PPK</h7>                  
-                        <select class="form-control" name="tingkat_beban" id="deskripsi">
+                        <select class="form-control" required="required" name="tingkat_beban" id="deskripsi">
                                 <option value="Tinggi">Tinggi</option>
                                 <option value="Sedang">Sedang</option>
                                 <option value="Rendah">Rendah</option>
@@ -1010,14 +1012,14 @@
                   <div class="form-bottom">
                      <div class="form-group">
                         <h7>Jenis pelaku usaha</h7>                       
-                         <select class="form-control" name="pelaku_usaha" id="deskripsi">
+                         <select class="form-control" required="required" name="pelaku_usaha" id="deskripsi">
                                 <option value="Perorangan">1. Perorangan </option>
                                 <option value="Badan Usaha">2. Badan Usaha</option>
                          </select>
                      </div>
                      <div class="form-group">
                         <h7>Terdapat pelaku usaha yang dinilai mampu dan memenuhi syarat</h7>
-                            <select class="form-control" name="syarat_usaha" id="deskripsi">
+                            <select class="form-control" required="required" name="syarat_usaha" id="deskripsi">
                                 <option value="Banyak">Banyak</option>
                                 <option value="Terbatas">Terbatas</option>
                             </select><br>
@@ -1058,14 +1060,14 @@
                      <div class="form-group">
                         <h7>Cara pemeliharaan/teknik/prosedur pemeliharaan</h7>
                         <label class="sr-only" for="form-facebook"></label>
-                        <input name="pemeliharaan" class="form-facebook form-control" id="form-facebook" type="text">
+                        <input name="pemeliharaan" required="required" class="form-facebook form-control" id="form-facebook" type="text">
                      </div>
                      <div class="form-group">
                         <h7>Kebutuhan pelatihan untuk lingkup pemeliharaan</h7> 
-                        <form method="POST" action="tes_cek.php" ><br>
+                        <form method="POST" required="required" action="tes_cek.php" ><br>
                         <input type="radio" name="radiopelatihan" value="ya">Ya <br />
                         <input type="radio" name="radiopelatihan" value="tidak">Tidak <br />
-                             <br>
+                         <br>
                   </div>
                </fieldset>
           
@@ -1100,39 +1102,41 @@
                   </div>
                        <div class="form-group"><br>
                     <h7>Terdapat pekerjaan sejenis pada kegiatan lain</h7>
-                <form method="POST" action="tes_cek.php" name="pekerjaan_sejenis"><br>
+                <form method="POST" required="required" action="tes_cek.php" name="pekerjaan_sejenis"><br>
                 <input type="radio" name="radiopksj" value="ya">Ya <br />
                 <input type="radio" name="radiopksj" value="tidak">Tidak <br />  
                      </div>
                      <h7>Indikasi konsolidasi atas pekerjaan </h7>
-            <form method="POST" action="tes_cek.php" name="indikasi"><br>
+            <form method="POST" required="required" action="tes_cek.php" name="indikasi"><br>
                 <input type="radio" name="radioindikasi" value="Direkomendasikan"> Direkomendasikan<br />
                 <input type="radio" name="radioindikasi" value="Tidak direkomendasikan">Tidak direkomendasikan <br><br>
             <h7>Apabila direkomendasikan, jelaskan lebih lanjut rencana konsolidasi pekerjaan/pemeliharaan tersebut</h7>
-              <input name="rekomendasi" class="form-google-plus form-control" id="form-google-plus" type="text"><br>
+              <input name="rekomendasi" required="required" class="form-google-plus form-control" id="form-google-plus" type="text"><br>
              <h7>Catatan Penting</h7>
-             <textarea name="catatan" class="form-google-plus form-control" id="form-google-plus" type="textarea"></textarea>
+             <textarea name="catatan" required="required" class="form-google-plus form-control" id="form-google-plus" type="textarea"></textarea>
                   <div class="form-bottom">
                      <div class="form-group">
-                        <h7>Disusun pertama kali tanggal</h7>
-                         <input name="disusun" class="form-google-plus form-control" id="form-google-plus" type="date">
+                     <h7>Disusun pertama kali tanggal</h7>
+                         <input name="disusun" required="required" class="form-google-plus form-control" id="form-google-plus" type="date">
                      </div>
                      <div class="form-group">
-                        <h7>Disusun oleh</h7>
-                         <input name="disusun_oleh" class="form-google-plus form-control" id="form-google-plus" type="textarea">
+                     <h7>Disusun oleh</h7>
+                         <input name="disusun_oleh" required="required" class="form-google-plus form-control" id="form-google-plus" type="textarea">
+                     </div>
+
                      <div class="form-group"><br>
-                         <h7>Disetujui oleh</h7>
-                     <input name="disetujui" class="form-google-plus form-control" id="form-google-plus" type="textarea">
-                      <h7>Disetuji oleh Pengguna Anggaran/Kuasa Pengguna Anggaran</h7>
-                     <input name="pengguna_anggaran" class="form-google-plus form-control" id="form-google-plus" type="textarea">
-                      <h7>Pejabat Pembuat Komitmen</h7>
-                     <input name="pembuat_komitmen" class="form-google-plus form-control" id="form-google-plus" type="textarea">
+                     <h7>Disetujui oleh</h7>
+                        <input name="disetujui" required="required" class="form-google-plus form-control" id="form-google-plus" type="textarea">
+                     <h7>Disetuji oleh Pengguna Anggaran/Kuasa Pengguna Anggaran</h7>
+                        <input type="file" name="pengguna_anggaran" class="form-control" required/> 
                      <h7>Pejabat Pembuat Komitmen</h7>
-                     <input name="mengetahui" class="form-google-plus form-control" id="form-google-plus" type="textarea">
+                        <input type="file" name="pembuat_komitmen" class="form-control" required/> 
+                     <h7></h7>
+                        <input type="file" name="mengetahui" class="form-control" required/> 
                      <h7>Tenaga Ahli</h7>
-                     <input name="tenaga_ahlii" class="form-google-plus form-control" id="form-google-plus" type="textarea">
+                        <input type="file" name="tenagaahlii" class="form-control" required/> 
                      <h7>Tenaga Ahli</h7>
-                     <input name="TenagaAhli" class="form-google-plus form-control" id="form-google-plus" type="textarea">
+                        <input type="file" name="TenagaAhli" class="form-control" required/> 
                   </div>
                </fieldset>
            
@@ -1151,17 +1155,26 @@
     $("div[id^='myModal']").each(function(){
   
   var currentModal = $(this);
+
+  var jumlahInput = 0;
+  var jumlahTrue = 0;
+  var jumlahTextarea = 0;
   
   
   //click next
   currentModal.find('.btn-next').click(function(){
+    jumlahInput = 0;
+    jumlahTrue = 0;
     currentModal.find('input').each(function(){
+        jumlahInput++; 
         if(!$(this).prop('required')){
-            currentModal.modal('hide');
-            currentModal.closest("div[id^='myModal']").nextAll("div[id^='myModal']").first().modal('show');
+            // currentModal.modal('hide');
+            // currentModal.closest("div[id^='myModal']").nextAll("div[id^='myModal']").first().modal('show');
+            jumlahTrue++;
         } else {
             if($(this).val() != ''){
-                isValid = true;
+                jumlahTrue++;
+                // isValid = true;
                 $(this).css("background-color","white");
             }else{
                 isValid = false;
@@ -1172,23 +1185,51 @@
             }
         }
 
-        var msf_fs_i_count = msf_fs.querySelectorAll("input").length;
-        for (i = 0; i < msf_fs_i_count; ++i) {
-            var msf_input_s = msf_fs.querySelectorAll("input")[i];
-            if (msf_input_s.getAttribute("type") === "button") {
-                // nothing happens
-            } else {
-                if (msf_input_s.value === "") {
-                    // msf_input_s.style.backgroundColor = "pink";
-                    msf_val = true;
-                } else {
-                    if (msf_val === false) {} else {
-                        msf_val = true;
-                        msf_input_s.style.backgroundColor = "white";
-                    }
-                }
-            };
+  //       var msf_fs_i_count = msf_fs.querySelectorAll("input").length;
+  //       for (i = 0; i < msf_fs_i_count; ++i) {
+  //           var msf_input_s = msf_fs.querySelectorAll("input")[i];
+  //           if (msf_input_s.getAttribute("type") === "button") {
+  //               // nothing happens
+  //           } else {
+  //               if (msf_input_s.value === "") {
+  //                   // msf_input_s.style.backgroundColor = "pink";
+  //                   msf_val = true;
+  //               } else {
+  //                   if (msf_val === false) {} else {
+  //                       msf_val = true;
+  //                       msf_input_s.style.backgroundColor = "white";
+  //                   }
+  //               }
+  //           };
+  //       }
+    
     });
+
+    currentModal.find('textarea').each(function(){
+        jumlahInput++;
+        if(!$(this).prop('required')){
+            // currentModal.modal('hide');
+            // currentModal.closest("div[id^='myModal']").nextAll("div[id^='myModal']").first().modal('show');
+            jumlahTrue++;
+        } else {
+            if($(this).val() != ''){
+                jumlahTrue++;
+                // isValid = true;
+                $(this).css("background-color","white");
+            }else{
+                isValid = false;
+                let name = $(this).attr("name");
+                $(this).css("background-color","red");
+
+                alert('Mohon isikan field '+name);
+            }
+        }
+
+    });
+
+    if (jumlahTrue == jumlahInput) {
+        isValid = true;
+    }
 
     if(isValid==true){
         currentModal.modal('hide');
@@ -1204,6 +1245,28 @@
   });
 
 });
+
+
+</script>
+
+<script type="text/javascript">
+      (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('next', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
 
 </script>
 <script type="text/javascript">
